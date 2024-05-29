@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor-form">
+    <form [formGroup]="userForm" (ngSubmit)="crearUsuario()" class="formulario">
+  
+      <h2>CREAR WORKOUT</h2>
+  
+      <label for="email">Email:  </label>
+      <input id="email" formControlName="email" required><br>
+    
+      <label for="first_name">Nombre: </label>
+      <input id="first_name" formControlName="first_name" required>
+      
+      <label for="last_name">Apellidos: </label>
+      <input id="last_name" formControlName="last_name" required>
+      
+      <label for="avatar">avatar: </label>
+      <input id="avatar" formControlName="avatar" required>
+    
+      <button type="submit">Crear Workout</button>
+    </form>
+  </div>
+      
+  
+  

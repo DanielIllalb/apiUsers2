@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor-principal">
+    <div *ngIf="users">
+        <div class="contenedor-users">
+            <article *ngFor="let user of users.data">
+                <img [src]="user.avatar" width="150px" height="150px" alt="user_img">
+                <h2>{{user.first_name}}</h2>
+                <p> <a [routerLink]="['/users',user.id]">Ver info</a></p>
+                <button (click)="borrarUsuario(user.id)">Borrar Usuario</button>
+            </article>
+        </div>
+    </div>
+</div>

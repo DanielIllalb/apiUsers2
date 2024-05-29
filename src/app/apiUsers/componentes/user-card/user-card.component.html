@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+
+<div class="container-principal">
+    <div *ngIf="user">
+        <article class="contenedor-info">
+            <p>Email: {{user.email}}</p>
+            <p>Apellidos: {{user.last_name}}</p>
+        </article>
+    </div>
+</div>
